@@ -1,0 +1,13 @@
+.button {
+  padding: 15px;
+  height: auto;
+  width: 100%;
+  color: white;
+  border-radius: 10px;
+  &.ekle{
+    background-color: green;
+  }
+  &.sil{
+    background-color: red;
+  }
+}
