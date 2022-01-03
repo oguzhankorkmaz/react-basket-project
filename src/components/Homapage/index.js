@@ -1,5 +1,4 @@
 import React from "react";
-import reactDom from "react-dom";
 import { useState } from "react/cjs/react.development";
 import Card from "../Card";
 
@@ -34,7 +33,8 @@ function Home() {
               ></Card>
             </div>
             <div className="basket-area">
-              Sepetteki Ürün Sayısı: {basket} <br /> Toplam Fiyat: {toplamFiyat} $
+              Sepetteki Ürün Sayısı: {basket} <br /> Toplam Fiyat: {toplamFiyat}{" "}
+              $
             </div>
           </div>
         </div>

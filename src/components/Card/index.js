@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
 import Button from "../Button";
 import "./card.scss";
 
@@ -20,6 +19,7 @@ function Card({
       setInBasket(true);
       setBasket(basket + 1);
       setToplamFiyat(toplamFiyat + fiyat);
+      console.log(fiyat)
     } else {
       setInBasket(false);
       setBasket(basket - 1);
@@ -30,7 +30,7 @@ function Card({
     <>
       <div className="card">
         <div className="card-img">
-          <img src={`/img/${image}`} />
+          <img src={`/img/${image}`} alt={baslik}/>
         </div>
         <div className="card-content">
           <div className="title">{baslik}</div>
